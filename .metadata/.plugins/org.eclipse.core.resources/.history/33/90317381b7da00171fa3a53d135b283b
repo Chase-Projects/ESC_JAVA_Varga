@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class TwoQuestions
+{
+	public static void main( String[] args)
+	{ 
+		Scanner keyboard = new Scanner(System.in);
+	
+	
+		String A1,A2,A3;
+	
+		
+		System.out.println("Two Questions");
+		
+		System.out.println("if it a vegtable, animal, or mineral");
+		System.out.println(">");
+		A1 = keyboard.next();
+		System.out.print(" ");
+		System.out.println("is it bigger or smaller than a breadbox");
+		System.out.println(">");
+		A2 = keyboard.next();
+		System.out.print(" ");
+		
+		
+	
+		
+		if(A1.equals("animal") && A2.equals("smaller"))
+		{
+			System.out.println("Its a Squirrel");
+		}
+		else if(A1.equals("vegtable") && A2.equals("smaller"))
+		{
+			System.out.println("Its a carrot");
+		}
+		else if(A1.equals("mineral") && A2.equals("smaller"))
+		{
+			System.out.println("Its a paperclip");
+		}
+		if(A1.equals("animal") && A2.equals("bigger"))
+		{
+			System.out.println("Its a Moose ");
+		}
+		else if(A1.equals("vegtable") && A2.equals("bigger"))
+		{
+			System.out.println("Its a Watermelon");
+		}
+		else if(A1.equals("mineral") && A2.equals("bigger"))
+		{
+			System.out.println("Its a Camaro");
+		}
+		else
+		{
+			System.out.println("Please check your syntax");
+		}
+				
+	
+		
+		
+		
+	}
+}

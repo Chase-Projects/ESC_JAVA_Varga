@@ -21,5 +21,7 @@ public class DumbCalculator
 	 n3=keyboard.nextDouble();
 	 
 	 System.out.print("The average is " + (n1 + n2 + n3 / 3) + " ");
+	
+	 keyboard.close ();
 	}
 }

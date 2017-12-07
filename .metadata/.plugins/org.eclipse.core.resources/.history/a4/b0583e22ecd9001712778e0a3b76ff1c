@@ -1,0 +1,44 @@
+
+import java.util.Scanner;
+
+public class SpaceBoxing
+{
+	public static void main( String[] args)
+	{ 
+		Scanner keyboard = new Scanner(System.in);
+	
+	
+		
+		int weight, planet;
+	
+		
+		
+		System.out.print("Please enter your current earth weight");
+		weight = keyboard.nextInt();
+	
+		System.out.print(" ");
+		System.out.println("I have Information on the following plantets");
+		System.out.println("  1.Venus  2.Mercury  3.Jupiter ");
+		System.out.println("  4.saturn 3.Uranus   6.Neptune");
+		System.out.println(" ");
+		
+		System.out.print("  ");
+		System.out.println(" Which planet are you visiting? (number please)");
+		planet = keyboard.nextInt();
+		
+		
+		if ( planet == 1 )
+		{
+			System.out.println("Your weight on Venus is " + ( weight * 0.78 ) + "pounds on that planet.");
+		}
+		else if ( planet == 2  )
+		{
+			System.out.println("Your weight on Venus is " + ( weight * 0.78 ) + "pounds on that planet.");
+		}		
+		
+		
+		
+		keyboard.close();
+		
+	}		
+}

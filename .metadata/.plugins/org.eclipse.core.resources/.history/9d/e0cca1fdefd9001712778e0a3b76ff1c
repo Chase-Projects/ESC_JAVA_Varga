@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class ALittleQuiz
+{
+	public static void main( String[] args)
+	{ 
+		Scanner keyboard = new Scanner(System.in);
+	
+	
+		int A1,A2,A3;
+		
+		
+	
+		
+		
+		System.out.println("Q1) What is the probability of getting this question right by guessing");
+		System.out.println("1) 25%");
+		System.out.println("2) 50%");
+		System.out.println("3) 25%");
+		System.out.println("4) Im not sure");
+		System.out.println("");
+		System.out.print(">");
+		A1 = keyboard.nextInt();
+		
+		if ( A1 == 1 )
+		{
+			System.out.println("Sorry, the correct answer is im not sure");
+		}
+		else if ( A1 == 2 )
+		{
+			System.out.println("Sorry, the correct answer is im not sure");
+		}
+		else if ( A1 == 3 )
+		{
+			System.out.println("Sorry, the correct answer is im not sure");
+		}
+		else if ( A1 == 4 )
+		{
+			System.out.println("Thats correct!");
+		}
+		
+		keyboard.close();
+	
+		
+		
+		
+	}
+}
