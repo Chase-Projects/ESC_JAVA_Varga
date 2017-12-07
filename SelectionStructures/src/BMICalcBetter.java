@@ -8,34 +8,41 @@ public class BMICalcBetter
 		Scanner keyboard = new Scanner(System.in);
 	
 	
-		String name;
-		int age;
-		
-		
-		System.out.print("Hey, What is your name? ");
-		name = keyboard.next();
 	
-		System.out.print("Ok, " + name + " How old are you?");
-		age = keyboard.nextInt(); 
+		int feet, inches, pounds, BMI;
+		
+		
+		System.out.print("How many feet tall are you? ");
+		feet = keyboard.nextInt();
+	
+		System.out.print("How many inches? ");
+		inches = keyboard.nextInt(); 
+		
+		System.out.print("How many pounds do you weigh? ");
+		pounds = keyboard.nextInt(); 
 		
 		
 		
-		if ( age < 16 )
+		System.out.print("Your BMI is : " + ( pounds / (feet + inches) ) + " ");
+		BMI= pounds / (feet + inches);
+		
+		if ( BMI < 18.5)
 		{
-			System.out.println("You can not drive, " + name + ".");
+			System.out.println("You are underweight");
 		}
-		else if ( age >= 16 && age <= 17 )
+		else if ( BMI > 18.5 && BMI < 24.9 )
 		{
-			System.out.println("You can drive but not vote, " + name + ".");
-		}
-		else if ( age >= 18 && age <= 24 )
+			System.out.println("You are normal weight");
+		}		
+		else if ( BMI > 25.0 && BMI < 29.9)
 		{
-			System.out.println("You can vote, but not rent a car, " + name + ".");
-		}
-		else if ( age > 25 )
+			System.out.println("You are overweight");
+		}		
+		else if ( BMI > 30.0)
 		{
-			System.out.println("You can pretty much do whatever you want, " + name + ".");
+			System.out.println("You are obese");
 		}
+		
 		
 		keyboard.close();
 		
