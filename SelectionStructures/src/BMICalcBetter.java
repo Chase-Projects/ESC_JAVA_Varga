@@ -23,7 +23,7 @@ public class BMICalcBetter
 		
 		
 		
-		System.out.print("Your BMI is : " + ( pounds / (feet + inches) ) + " ");
+		System.out.println("Your BMI is : " + ( pounds / (feet + inches) ) + " ");
 		BMI= pounds / (feet + inches);
 		
 		if ( BMI < 18.5)

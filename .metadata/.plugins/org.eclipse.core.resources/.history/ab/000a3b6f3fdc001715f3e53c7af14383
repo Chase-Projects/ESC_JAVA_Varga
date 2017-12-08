@@ -1,0 +1,18 @@
+import java.util.Random;
+
+public class Dice 
+{
+
+	public static void main ( String[] args )
+	{
+	Random r = new Random();
+	
+	int dice1 = 1 + r.nextInt(6);
+	int dice2 = 1 + r.nextInt(6);
+	
+
+	System.out.println("The Roll #1 is " +  dice1 + "");
+	System.out.println("The Roll #2 " + dice2  + "");
+	System.out.println("The total is " + ( dice1 + dice2 ) + "!");
+	}
+}
