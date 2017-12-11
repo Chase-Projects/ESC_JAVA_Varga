@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PinLockTemplete
+public class PinLockout
 {
 	public static void main( String[] args )
 	{
