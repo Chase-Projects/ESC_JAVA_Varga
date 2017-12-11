@@ -1,0 +1,42 @@
+
+
+
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class kEPgUESSING 
+{
+	public static void main( String[] args )
+	{
+	Scanner keyboard = new Scanner(System.in);
+	Random r = new Random();
+	int number = 1 + r.nextInt(10);
+	String guess;
+	
+	
+	System.out.println( "I have choosen a number 1 -10 , try to guess it");
+	guess = keyboard.next();
+
+	 while ( guess != number)
+	 {
+		 System.out.println("That is correct try again");
+		 guess = keyboard.next();
+		 System.out.println("Your guess is");
+
+		
+	}
+	else
+	{
+		System.out.println("thats Correct!");
+	}
+	
+		
+		keyboard.close();
+	
+	
+	
+	
+	
+	}
+}
